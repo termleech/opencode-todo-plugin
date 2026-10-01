@@ -1,0 +1,21 @@
+package.json
+  s_09962063b42e28::t_e3238234ff193d 3
+src/tui.tsx
+  s_09962063b42e28::t_01f0433a038814 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "ff3bcf1437f23c97307cecc4c2faf5124de9e8d4",
+  "prompts": {},
+  "sessions": {
+    "s_09962063b42e28": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f079da2e0ffemdA6XGNLrXuUmx",
+        "model": "unknown"
+      },
+      "human_author": "Chuck Haines <chaines@gmail.com>"
+    }
+  }
+}
