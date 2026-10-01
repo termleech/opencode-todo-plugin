@@ -1,0 +1,80 @@
+.gitignore
+  h_6d0167bbb0f7d1 1-3
+.opencode/commands/opsx-apply.md
+  h_6d0167bbb0f7d1 1-198
+.opencode/commands/opsx-archive.md
+  h_6d0167bbb0f7d1 1-261
+.opencode/commands/opsx-explore.md
+  h_6d0167bbb0f7d1 1-236
+.opencode/commands/opsx-propose.md
+  h_6d0167bbb0f7d1 1-167
+.opencode/commands/opsx-sync.md
+  h_6d0167bbb0f7d1 1-283
+.opencode/commands/opsx-update.md
+  h_6d0167bbb0f7d1 1-102
+.opencode/plugins/todo/index.ts
+  h_6d0167bbb0f7d1 1-2
+.opencode/plugins/todo/tui.ts
+  h_6d0167bbb0f7d1 1-2
+.opencode/skills/openspec-apply-change/SKILL.md
+  h_6d0167bbb0f7d1 1-205
+.opencode/skills/openspec-archive-change/SKILL.md
+  h_6d0167bbb0f7d1 1-221
+.opencode/skills/openspec-explore/SKILL.md
+  h_6d0167bbb0f7d1 1-354
+.opencode/skills/openspec-propose/SKILL.md
+  h_6d0167bbb0f7d1 1-174
+.opencode/skills/openspec-sync-specs/SKILL.md
+  h_6d0167bbb0f7d1 1-290
+.opencode/skills/openspec-update-change/SKILL.md
+  h_6d0167bbb0f7d1 1-109
+README.md
+  h_6d0167bbb0f7d1 1-80
+bun.lock
+  h_6d0167bbb0f7d1 1-896
+openspec/changes/add-todo-tool-and-sidebar/.openspec.yaml
+  h_6d0167bbb0f7d1 1-2
+openspec/changes/add-todo-tool-and-sidebar/design.md
+  h_6d0167bbb0f7d1 1-119
+openspec/changes/add-todo-tool-and-sidebar/proposal.md
+  h_6d0167bbb0f7d1 1-33
+openspec/changes/add-todo-tool-and-sidebar/specs/todo-sidebar/spec.md
+  h_6d0167bbb0f7d1 1-65
+openspec/changes/add-todo-tool-and-sidebar/specs/todo-tracking/spec.md
+  h_6d0167bbb0f7d1 1-119
+openspec/changes/add-todo-tool-and-sidebar/tasks.md
+  h_6d0167bbb0f7d1 1-28
+openspec/config.yaml
+  h_6d0167bbb0f7d1 1-32
+package.json
+  h_6d0167bbb0f7d1 1-35
+src/index.ts
+  h_6d0167bbb0f7d1 1-86
+src/rpc.ts
+  h_6d0167bbb0f7d1 1-45
+src/store.ts
+  h_6d0167bbb0f7d1 1-50
+src/todo.ts
+  h_6d0167bbb0f7d1 1-83
+src/tui.tsx
+  h_6d0167bbb0f7d1 1-120
+test/plugin.test.ts
+  h_6d0167bbb0f7d1 1-123
+test/store.test.ts
+  h_6d0167bbb0f7d1 1-88
+test/todo.test.ts
+  h_6d0167bbb0f7d1 1-88
+tsconfig.json
+  h_6d0167bbb0f7d1 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "7a0d9e33c3bbb7eadac2f61f876ade0dd1a7eaf7",
+  "prompts": {},
+  "humans": {
+    "h_6d0167bbb0f7d1": {
+      "author": "Chuck Haines <chuck.haines@fieldnation.com>"
+    }
+  }
+}
