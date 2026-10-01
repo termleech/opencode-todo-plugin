@@ -1,3 +1,4 @@
+/** @jsxImportSource @opentui/solid */
 import { TextAttributes } from "@opentui/core"
 import { Plugin, usePlugin } from "@opencode/plugin/tui"
 import { For, Show, createEffect, createMemo, on } from "solid-js"
