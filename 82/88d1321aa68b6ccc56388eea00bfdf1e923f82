@@ -1,0 +1,19 @@
+package.json
+  s_8414c119df7e7a::t_5b10bdefc2a8ee 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "8288d1321aa68b6ccc56388eea00bfdf1e923f82",
+  "prompts": {},
+  "sessions": {
+    "s_8414c119df7e7a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f0857d671ffeTb1zKScCQwt7Lh",
+        "model": "unknown"
+      },
+      "human_author": "Chuck Haines <chaines@gmail.com>"
+    }
+  }
+}
