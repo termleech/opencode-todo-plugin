@@ -1,15 +1,24 @@
 import { readFileSync } from "node:fs"
 import { describe, expect, test } from "bun:test"
-import * as ts from "typescript"
+
+const root = new URL("..", import.meta.url).pathname
 
 describe("published package entrypoints", () => {
-  test("the TUI selects OpenTUI's JSX runtime without the workspace tsconfig", () => {
-    const source = readFileSync(new URL("../src/tui.tsx", import.meta.url), "utf8")
-    const { outputText } = ts.transpileModule(source, {
-      compilerOptions: { jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.ESNext },
-    })
+  // OpenCode skips its Solid JSX transform for files under node_modules, so an installed
+  // TUI entrypoint must already be Solid-compiled or the sidebar never reacts to data.
+  test("the TUI export is precompiled Solid output, not JSX source", async () => {
+    const build = Bun.spawnSync(["bun", "scripts/build.ts"], { cwd: root, stderr: "pipe" })
+    expect(build.stderr.toString()).toBe("")
+    expect(build.exitCode).toBe(0)
 
-    expect(outputText).toContain('"@opentui/solid/jsx-runtime"')
-    expect(outputText).not.toContain('"react/jsx-runtime"')
+    const pkg = JSON.parse(readFileSync(`${root}package.json`, "utf8"))
+    expect(pkg.exports["./tui"]).toBe("./dist/tui.js")
+    expect(pkg.files).toContain("dist")
+    expect(pkg.scripts.prepack).toBe("bun run build")
+
+    const output = readFileSync(`${root}dist/tui.js`, "utf8")
+    expect(output).not.toMatch(/jsx-(dev-)?runtime|jsxDEV/)
+    expect(output).toMatch(/from "@opentui\/solid"/)
+    expect(output).toMatch(/\b(createComponent|insert)\b/)
   })
 })
