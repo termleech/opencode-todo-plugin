@@ -1,0 +1,27 @@
+.gitignore
+  s_bf9655734df6b5::t_46ee059515f2c4 2
+package.json
+  s_bf9655734df6b5::t_36ed0c004a0e0a 3
+  s_bf9655734df6b5::t_36a3edd40fe0ab 9,13-14,17-18
+scripts/build.ts
+  s_bf9655734df6b5::t_f3b6be291eab84 1-17
+test/package.test.ts
+  s_bf9655734df6b5::t_3c55173b12cd2f 4,7-22
+  s_bf9655734df6b5::t_7fd70da0da14f6 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "8c7372d3b9099b3d5512fb0fea4b438dff02916b",
+  "prompts": {},
+  "sessions": {
+    "s_bf9655734df6b5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f02b0931affeoBCVznakMbxjTg",
+        "model": "unknown"
+      },
+      "human_author": "Chuck Haines <chaines@gmail.com>"
+    }
+  }
+}
