@@ -1,0 +1,26 @@
+src/tui.tsx
+  s_8a8b67f12d324f::t_ba2d91e499d3c6 7,36-40,42
+src/sidebar.ts
+  s_8a8b67f12d324f::t_ba2d91e499d3c6 1-10,12-13
+  s_8a8b67f12d324f::t_82ff2c3ea97028 11
+package.json
+  s_8a8b67f12d324f::t_8f9413ae518ea8 3
+test/sidebar.test.ts
+  s_8a8b67f12d324f::t_ba2d91e499d3c6 1-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a88129554b7cb4bf6930f8a9640ec732a237fc3b",
+  "prompts": {},
+  "sessions": {
+    "s_8a8b67f12d324f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f0331c266ffejlB43PCnj788Ug",
+        "model": "unknown"
+      },
+      "human_author": "Chuck Haines <chaines@gmail.com>"
+    }
+  }
+}
