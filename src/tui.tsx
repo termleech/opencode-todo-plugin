@@ -4,6 +4,7 @@ import { Plugin, usePlugin } from "@opencode/plugin/tui"
 import { For, Show, createEffect, createMemo, on } from "solid-js"
 import { createStore, reconcile } from "solid-js/store"
 import { Todo } from "./rpc.ts"
+import { loadSessionTodos } from "./sidebar.ts"
 import { countTodos, marker } from "./todo.ts"
 import type { TodoItem } from "./todo.ts"
 
@@ -32,9 +33,13 @@ export default Plugin.define({
       const revision = revisions.get(sessionID) ?? 0
       try {
         const location = await locationOf(sessionID)
-        const result = await rpc.list({ sessionID }, { location: { directory: location.directory } })
+        const todos = await loadSessionTodos(
+          (input, options) => rpc.list(input, options) as Promise<{ todos: TodoItem[] }>,
+          sessionID,
+          location,
+        )
         if ((revisions.get(sessionID) ?? 0) !== revision) return
-        apply(sessionID, (result as { todos: TodoItem[] }).todos)
+        apply(sessionID, todos)
       } catch (error) {
         console.error("todo.tui: failed to load todos", error)
       }
